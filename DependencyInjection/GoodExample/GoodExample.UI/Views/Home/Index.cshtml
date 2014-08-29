@@ -1,0 +1,12 @@
+﻿@model GoodExample.UI.Models.FeaturedProductsViewModel
+@{
+    ViewBag.Title = "Index";    
+}
+ 
+<h2>Featured Products</h2>
+<div>
+    @foreach (var product in this.Model.Products)
+    {
+        <div>@product.SummaryText</div>
+    }
+</div>
