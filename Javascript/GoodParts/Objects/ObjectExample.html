@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Object Example Page</title>
+</head>
+<body>
+    <h2>Welcome to the Objects Example Page</h2>
+
+    <script>
+        var objExample = {};
+
+        objExample.flight = {
+            airline : "United",
+            number : 815,
+            departure : {
+                IATA : "JAX",
+                time : "2014-10-22 12:15",
+                city : "Jacksonville"
+            },
+            arrival : {
+                IATA : "VAN",
+                time : "2014-10-22 16:15",
+                city : "Vancouver"
+            }
+        };
+
+        objExample.newFlight = objExample.flight;
+    </script>
+</body>
+</html>
